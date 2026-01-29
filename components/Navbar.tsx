@@ -36,19 +36,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onContactClick }) =>
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div 
+          <div
             className="flex-shrink-0 cursor-pointer"
             onClick={(e) => handleNavClick('Home', e)}
           >
-            <Logo size={28} />
+            <Logo size={40} />
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             <div className="flex items-center space-x-8">
               {navItems.map((item) => (
-                <a 
-                  key={item.label} 
+                <a
+                  key={item.label}
                   href={item.href}
                   onClick={(e) => handleNavClick(item.label, e)}
                   className="group inline-flex items-center text-[15px] font-semibold text-slate-600 hover:text-techno-primary transition-colors cursor-pointer"
@@ -60,11 +60,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onContactClick }) =>
                 </a>
               ))}
             </div>
-            
+
             <div className="h-8 w-px bg-slate-200"></div>
 
-            <Button 
-              size="sm" 
+            <Button
+              size="sm"
               className="bg-techno-primary hover:bg-indigo-700 shadow-md shadow-indigo-200"
               onClick={onContactClick}
             >
@@ -74,8 +74,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, onContactClick }) =>
 
           {/* Mobile menu button */}
           <div className="lg:hidden flex items-center gap-4">
-             <Button 
-              size="sm" 
+            <Button
+              size="sm"
               className="bg-techno-primary hover:bg-indigo-700 text-xs px-3 py-2"
               onClick={onContactClick}
             >

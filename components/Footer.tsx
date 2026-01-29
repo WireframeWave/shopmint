@@ -26,10 +26,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onContactClick }) =>
     <footer className="bg-white border-t border-slate-100 py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          
+
           {/* Logo & Copyright */}
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-            <Logo size={24} />
+            <Logo size={36} />
             <div className="hidden md:block w-px h-4 bg-slate-200"></div>
             <div className="text-slate-500 text-sm">
               © {new Date().getFullYear()} Shopmintapp Inc.
@@ -38,27 +38,27 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onContactClick }) =>
 
           {/* Links */}
           <div className="flex items-center gap-8 text-sm font-medium text-slate-600">
-              <a 
-                href="#privacy" 
-                onClick={(e) => handleNavClick('privacy', e)}
-                className="hover:text-techno-primary transition-colors cursor-pointer"
-              >
-                Privacy
-              </a>
-              <a 
-                href="#terms" 
-                onClick={(e) => handleNavClick('terms', e)}
-                className="hover:text-techno-primary transition-colors cursor-pointer"
-              >
-                Terms
-              </a>
-              <a 
-                href="#contact" 
-                onClick={handleContactClick}
-                className="hover:text-techno-primary transition-colors cursor-pointer"
-              >
-                Contact
-              </a>
+            <a
+              href="#privacy"
+              onClick={(e) => handleNavClick('privacy', e)}
+              className="hover:text-techno-primary transition-colors cursor-pointer"
+            >
+              Privacy
+            </a>
+            <a
+              href="#terms"
+              onClick={(e) => handleNavClick('terms', e)}
+              className="hover:text-techno-primary transition-colors cursor-pointer"
+            >
+              Terms
+            </a>
+            <a
+              href="#contact"
+              onClick={handleContactClick}
+              className="hover:text-techno-primary transition-colors cursor-pointer"
+            >
+              Contact
+            </a>
           </div>
 
           {/* Socials */}
