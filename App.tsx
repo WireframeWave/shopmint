@@ -27,7 +27,7 @@ const App: React.FC = () => {
   };
 
   const renderContent = () => {
-    switch(currentPage) {
+    switch (currentPage) {
       case 'pricing':
         return <Pricing />;
       case 'migration':
@@ -47,7 +47,7 @@ const App: React.FC = () => {
             <Conversion />
             <Integrations />
             <PushNotifications />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <FAQ />
           </>
         );
@@ -56,25 +56,25 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white text-gray-900 relative flex flex-col">
-      <Navbar 
-        onNavigate={handleNavigate} 
-        onContactClick={() => setIsContactModalOpen(true)} 
+      <Navbar
+        onNavigate={handleNavigate}
+        onContactClick={() => setIsContactModalOpen(true)}
       />
-      
+
       <main className="flex-grow">
         {renderContent()}
       </main>
-      
-      <Footer 
-        onNavigate={handleNavigate} 
-        onContactClick={() => setIsContactModalOpen(true)} 
+
+      <Footer
+        onNavigate={handleNavigate}
+        onContactClick={() => setIsContactModalOpen(true)}
       />
-      
+
       <ChatWidget />
-      
-      <ContactModal 
-        isOpen={isContactModalOpen} 
-        onClose={() => setIsContactModalOpen(false)} 
+
+      <ContactModal
+        isOpen={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
       />
     </div>
   );
