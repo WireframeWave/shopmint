@@ -29,7 +29,7 @@ const App: React.FC = () => {
   const renderContent = () => {
     switch (currentPage) {
       case 'pricing':
-        return <Pricing />;
+        return <Pricing onContactClick={() => setIsContactModalOpen(true)} />;
       case 'migration':
         return <Migration />;
       case 'about':
