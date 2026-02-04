@@ -7,7 +7,7 @@ export const Logo: React.FC<{ className?: string; size?: number }> = ({ classNam
         src="/logo.png"
         alt="Shopmintapp Logo"
         className="h-full w-auto object-contain"
-        style={{ maxHeight: '100%', mixBlendMode: 'multiply' }}
+        style={{ maxHeight: '100%', mixBlendMode: 'multiply', filter: 'contrast(1.1) brightness(1.05)' }}
       />
     </div>
   );
